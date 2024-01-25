@@ -1,6 +1,7 @@
 # Course-Related Notes Repository
 
-Welcome to the Course-Related Notes Repository! This GitHub repository is dedicated to sharing and collaborating on notes related to our course topics. 
+Welcome to the Course-Related Notes Repository! 
+This GitHub repository is dedicated to sharing and collaborating on notes related to our course topics. 
 We encourage contributions from everyone and value the collective knowledge that we can build together.
 
 ## Repository Purpose
