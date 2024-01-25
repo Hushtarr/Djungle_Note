@@ -5,11 +5,9 @@ In Java, a **class** is a blueprint defining the structure and behavior of **obj
 **Object** is an instance of a **class**, created using the new keyword. 
 
 
-
 ## What is the behavior of an Object?
 
 The **behavior** of an object is what it can do, represented by its **methods**. 
-
 
 
 ## What is object-oriented programming?
@@ -21,7 +19,6 @@ Object-oriented programming (OOP) is a coding approach(way) that uses objects, c
 ## What is the key principles of Object-oriented programming?
 
 The key principles of Object-Oriented Programming (OOP) are **encapsulation**, **inheritance**, and **polymorphism**. 
-
 
 
 ## What is Encapsulation?
