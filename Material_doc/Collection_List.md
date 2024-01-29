@@ -62,6 +62,7 @@ Stack inherits from Vector and provides Last-In-First-Out (LIFO) stack operation
 4. `empty()`: Checks if the stack is empty.
 5. `search(Object o)`: Returns the position of the object in the stack.
 
+The Stack class in Java can use some methods that are related to the Queue interface, but this is not because the Stack class implements the Queue interface. In fact, the Stack class does not directly implement the Queue interface. The reason why the Stack class can use certain queue-like methods is because it inherits from the Vector class, and the Vector class provides a range of methods that can be used for queue operations.
 ---
 
 ### Similarities
