@@ -1,4 +1,4 @@
-# Description of the elements required for the data structure
+# Description of the data structure
 
 ### Collection
 
