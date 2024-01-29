@@ -1,4 +1,4 @@
-# Queue Interface and Implementations
+# List Interface and Implementations
 ### ArrayList Methods
 
     `ArrayList<Type> arrayList = new ArrayList<>(); `
