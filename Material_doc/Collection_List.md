@@ -1,6 +1,6 @@
 # List Interface and Implementations
 
-### ArrayList Methods
+### ArrayList 
 
     `ArrayList<Type> arrayList = new ArrayList<>(); `
 
@@ -15,7 +15,7 @@
 9. `contains(Object o)`: Checks if the list contains the specified element.
 10. `isEmpty()`: Checks if the list is empty.
 
-### LinkedList Methods
+### LinkedList 
 
 `LinkedList<Type> linkedList = new LinkedList<>();`
 
@@ -28,7 +28,7 @@ LinkedList provides all the methods of ArrayList, plus some additional methods t
 5. `getFirst()`: Retrieves the first element of the list.
 6. `getLast()`: Retrieves the last element of the list.
 
-### Vector Methods
+### Vector 
 
 `Vector<Type> vector = new Vector<>();`
 
@@ -45,7 +45,7 @@ Vector provides methods similar to ArrayList. Being thread-safe, its methods are
 9. `contains(Object o)`: Checks if the vector contains the specified element.
 10. `isEmpty()`: Checks if the vector is empty.
 
-### Stack Methods
+### Stack 
 
 `Stack<Type> stack = new Stack<>();`
 
