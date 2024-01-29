@@ -29,3 +29,22 @@
 4. **TreeMap**: Sorted (natural or custom ordering), keys do not allow duplicates, values allow duplicates.
 
 Each of these categories has its specific use case, and the choice of which type to use depends on the specific application scenario, such as whether maintaining the insertion order of elements is needed, the need for fast access, etc.
+
+---
+# Description of the sorting characteristics 
+1. **Sorted**:
+  
+  - This refers to collections where the elements are arranged according to a specific order. This order is typically either the natural ordering of the elements (e.g., numeric or alphabetical order) or an order defined by a custom `Comparator`.
+  - Examples in Java include `TreeSet` and `TreeMap`, which implement the `SortedSet` and `SortedMap` interfaces, respectively.
+  - In a sorted collection, the elements are iterated in the defined sorted order.
+2. **Ordered**:
+  
+  - This term describes collections where the elements maintain a specific consistent order, usually the order in which they were added to the collection.
+  - This is about the retention of the order of insertion or some logical sequence, rather than sorting the elements.
+  - For instance, `LinkedList` and `LinkedHashMap` maintain the order of insertion, even though they are not sorted.
+3. **Unordered**:
+  
+  - An unordered collection is one where the elements do not follow any specific order. The storage and retrieval order of elements is not fixed and does not guarantee any order.
+  - `HashSet` and `HashMap` are typical examples of unordered collections in Java. They do not guarantee any particular iteration order, and the order can vary with each iteration.
+
+In summary, "Sorted" emphasizes that elements are arranged according to certain rules or criteria, "Ordered" means that elements are stored in the sequence they were added or in a logical sequence, and "Unordered" indicates the absence of any order guarantee.
