@@ -4,7 +4,7 @@ The `Set` interface in Java is a collection that cannot contain duplicate elemen
 
 ### HashSet
 
-### `Set<String> hashSet = new HashSet<>();`
+`Set<String> hashSet = new HashSet<>();`
 
 - **Description**: Implements a set using a hash table. It does not maintain the order of elements.
 - **Performance**: Offers constant time performance for basic operations (add, remove, contains, and size), assuming the hash function disperses elements properly.
