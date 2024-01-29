@@ -118,4 +118,4 @@ When choosing which collection class to use, it typically depends on the specifi
 3. `peek()`: Looks at the top element of the stack without removing it.
 4. `empty()`: Checks if the stack is empty.
 5. `search(Object o)`: Returns the position of the object in the stack.
-/*The search method is for finding the position of the specified object on the stack, the position count starts from the top of the stack, and the position of the top element of the stack starts from 1.*/
+\ *The search method is for finding the position of the specified object on the stack, the position count starts from the top of the stack, and the position of the top element of the stack starts from 1.*
