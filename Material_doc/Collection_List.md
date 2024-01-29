@@ -28,6 +28,8 @@ LinkedList provides all the methods of ArrayList, plus some additional methods t
 5. `getFirst()`: Retrieves the first element of the list.
 6. `getLast()`: Retrieves the last element of the list.
 
+**The `LinkedList` class in Java can use the methods of the `Queue` interface because it implements the `Queue` interface. More specifically, `LinkedList` actually implements the `Deque` interface, which is an extension of the `Queue` interface.**
+
 **Because the `Deque` interface extends the `Queue` interface, `LinkedList` inherits all the methods of the `Queue` interface, such as `offer`, `poll`, `peek`, etc.as well as the methods specific to the `Deque` interface, including `offerFirst`, `offerLast`, `pollFirst`, `pollLast`, `push`, `pop`, and more.**
 
 **This means that `LinkedList` can not only be used as a standard queue (following the first-in-first-out principle) but also as a double-ended queue (allowing operations at both the head and the tail), and even as a stack (following the last-in-first-out principle).**
