@@ -11,6 +11,7 @@
 - **Methods**:
   
   - `add`, `offer`: Insert elements into the queue according to their priority.
+    (The  difference between add and offer is in how they handle situations where the queue is full: add throws an exception, while offer returns false.)
   - `remove`, `poll`: Remove and return the head of the queue.
   - `element`, `peek`: Retrieve, but do not remove, the head of the queue.
 
