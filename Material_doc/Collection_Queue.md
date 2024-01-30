@@ -12,8 +12,11 @@
   
   - `add`, `offer`: Insert elements into the queue according to their priority.\
     *(The  difference between add and offer is in how they handle situations where the queue is full: add throws an exception, while offer returns false.)*
-  - `remove`, `poll`: Remove and return the head of the queue.
-  - `element`, `peek`: Retrieve, but do not remove, the head of the queue.
+  - `remove`, `poll`: Remove and return the head of the queue.\
+    *(The  difference between remove and poll is in how they handle situations where the queue is empty: remove throws an exception, while poll returns null.)*
+  - `element`, `peek`: Retrieve, but do not remove, the head of the queue.\
+    *(The  difference between element and peek is in how they handle situations where the queue is empty: element throws an exception, while peek returns null.)*
+
 
 # Deque Interface and Implementations
 
