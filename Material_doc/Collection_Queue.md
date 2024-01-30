@@ -10,9 +10,9 @@
 
 - **Methods**:
   
-  - `add`, `offer`: Insert elements into the queue according to their priority.\
-  - `remove`, `poll`: Remove and return the head of the queue.\
-  - `element`, `peek`: Retrieve, but do not remove, the head of the queue.\
+  - `add`, `offer`: Insert elements into the queue according to their priority.
+  - `remove`, `poll`: Remove and return the head of the queue.
+  - `element`, `peek`: Retrieve, but do not remove, the head of the queue.
 
 
 # Deque Interface and Implementations
