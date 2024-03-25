@@ -1,3 +1,7 @@
+<img src="https://img.freepik.com/premium-photo/view-forest-with-river-mountain-illustration-banner-background_826849-2880.jpg">
+
+
+
 # Course-Related Notes Repository
 
 Welcome to the Course-Related Notes Repository! 
