@@ -22,6 +22,6 @@ public class D1_Palindrome_Number
     {
     public static void main(String[] args)
         {
-
+// ?????
         }
     }
