@@ -26,9 +26,12 @@ public class D1_Palindrome_Number
 
         while (temp!=0)
             {
-            int digit =temp% 10; // Get the last digit of temp
-            latest=latest*10+digit; //Multiply 'latest' by 10 to shift its digits one place to the left, then add the extracted digit from 'temp'.
+            int digit =temp% 10;
+            // 幂10的目的是控制小数点并得到余数,在这里首先整数会变成一个小数,然后%操作之后小数点左移得到余数,也就是小数点之后的数字
+            latest=latest*10+digit;
+            // 乘10是为了恢复原油数字的位数,得到的个位数,乘10变成十位数,然后在个位数上加上新得到的余数
             temp/=10;
+            // 将临时变量依此拆解(小数点左移得到整数部分用于下一轮的取余数操作,直至拆解完毕)
             }
         System.out.println(latest == original ? "it is" : "it is not");
         }
