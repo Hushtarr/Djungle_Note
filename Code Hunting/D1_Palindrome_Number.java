@@ -22,6 +22,14 @@ public class D1_Palindrome_Number
     {
     public static void main(String[] args)
         {
+        int original=212,latest=0,temp=original;
 
+        while (temp!=0)
+            {
+            int digit =temp% 10; // Get the last digit of temp
+            latest=latest*10+digit; //Multiply 'latest' by 10 to shift its digits one place to the left, then add the extracted digit from 'temp'.
+            temp/=10;
+            }
+        System.out.println(latest == original ? "it is" : "it is not");
         }
     }
