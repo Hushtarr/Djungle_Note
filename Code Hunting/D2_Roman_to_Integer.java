@@ -51,6 +51,12 @@ public class D2_Roman_to_Integer
         for (int i = 0; i < Roman.length(); i++)
         {
             if (i < (Roman.length() - 1) && (m.get(Roman.charAt(i))) < (m.get(Roman.charAt(i + 1))))
+            //i < (Roman.length() - 1)  --->   它用来确保在访问i++时不会超出字符串的索引界限。
+            //m.get(Roman.charAt(i))) --->使用Map的get(Object key)方法时，你会得到与给定key关联的value
+                //m.get('X')  得到10
+            //m.get(Roman.charAt(i + 1) --->获取字符串Roman中位于当前索引i后一个位置的字符。
+                //m.get('I')  得到1
+                //判断10<1是否成立
             {
              ans -= m.get(Roman.charAt(i));
             }
