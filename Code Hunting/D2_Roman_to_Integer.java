@@ -57,13 +57,19 @@ public class D2_Roman_to_Integer
             //m.get(Roman.charAt(i + 1) --->获取字符串Roman中位于当前索引i后一个位置的字符。
                 //m.get('I')  得到1
                 //判断10<1是否成立
+                //(m.get(Roman.charAt(i))) < (m.get(Roman.charAt(i + 1) 就是检查左边是否小于右边
             {
              ans -= m.get(Roman.charAt(i));
+             // 得到结果的方法:左小右大 从ans里减
             }
-
+                //XIX
+                // 1-> (x,i)  2->(i,x)
+                //X 和 I  属于左大右小  所以 X往里加,
+                //I 和 X  属于左小右大  所以 I从ans里减
             else
             {
             ans += m.get(Roman.charAt(i));
+            // 得到结果的方法:左大右小 往ans里加
             }
         }
 
