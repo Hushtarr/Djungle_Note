@@ -32,7 +32,7 @@ public class D2_Roman_to_Integer
     {
     public static void main(String[] args)
         {
-        System.out.println(Solution("XIX"));
+        System.out.println(Solution("XCXV"));
 
         }
     public static int Solution (String Roman)
@@ -65,11 +65,11 @@ public class D2_Roman_to_Integer
                 //XIX
                 // 1-> (x,i)  2->(i,x)
                 //X 和 I  属于左大右小  所以 X往里加,
-                //I 和 X  属于左小右大  所以 I从ans里减
+                //I 和 X  属于左小右大  所以 I从里减
             else
             {
             ans += m.get(Roman.charAt(i));
-            // 得到结果的方法:左大右小 往ans里加
+            // 得到结果的方法:左大右小或相等 往ans里加
             }
         }
 
