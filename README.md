@@ -1,6 +1,4 @@
-<img src="https://img.freepik.com/premium-photo/view-forest-with-river-mountain-illustration-banner-background_826849-2880.jpg">
-
-
+<img src="https://i0.wp.com/static.vecteezy.com/system/resources/previews/029/305/615/large_2x/ai-generative-beautiful-jungle-background-with-border-made-of-tropical-leaves-backdrop-with-copy-space-free-photo.jpg?ssl=1">
 
 # Course-Related Notes Repository
 
