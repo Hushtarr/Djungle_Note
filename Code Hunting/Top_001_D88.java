@@ -5,7 +5,9 @@ import java.util.Arrays;
 * representing the number of elements in nums1 and nums2 respectively.
 *
 Merge nums1 and nums2 into a single array sorted in non-decreasing order.
-The final sorted array should not be returned by the function, but instead be stored inside the array nums1. To accommodate this, nums1 has a length of m + n, where the first m elements denote the elements that should be merged, and the last n elements are set to 0 and should be ignored. nums2 has a length of n.
+The final sorted array should not be returned by the function, but instead be stored inside the array nums1.
+* To accommodate this, nums1 has a length of m + n, where the first m elements denote the elements that should be merged,
+*  and the last n elements are set to 0 and should be ignored. Nums2 has a length of n.
 
 
 
@@ -33,7 +35,7 @@ The result of the merge is [1].
 Note that because m = 0, there are no elements in nums1.
 * The 0 is only there to ensure the merge result can fit in nums1.
 */
-public class Top_001
+public class Top_001_D88
     {
     public static void main(String[] args)
         {
@@ -51,12 +53,12 @@ public class Top_001
         public void merge(int[] nums1, int m, int[] nums2, int n)
             {
                 /*
-                nums1 = [1,2,3,0,0,0], m = 3(valid number in second array)
-                nums2 = [2,5,6], n= 3(valid number in second array)
+                nums1 = [1,2,3,0,0,0], m = 3(valid number in a second array)
+                nums2 = [2,5,6], n= 3(valid number in a second array)
                 */
-                int LastIndex_FirstAry = m - 1; // Index of the last non-zero element in first array e:3 -> index:2
-                int LastIndex_SecondAry = n - 1; // Index of the last non-zero element in second array e:6 -> index:2
-                int LastIndex_MergedAry = m + n - 1;// Index of the last  element in merged array e:3 -> index:2
+                int LastIndex_FirstAry = m - 1; // Index of the last non-zero element in a first array e:3 -> index:2
+                int LastIndex_SecondAry = n - 1; // Index of the last non-zero element in a second array e:6 -> index:2
+                int LastIndex_MergedAry = m + n - 1;// Index of the last element in a merged array e:3 -> index:2
 
                 while (LastIndex_SecondAry >= 0)
                     //To sort the merge arrays,
