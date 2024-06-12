@@ -53,12 +53,13 @@ public class Top_002_D27 {
     public static int[] removeElement(int[] nums, int givenNum) {
         // two pointer solution, up/low pointer
         int  up = 0;
-        // the up pointer -> indicate the index of target value (target value -> stay and get overwrite,not target value move with the low pointer,
+        // the up pointer -> indicate the index of target value
+        // (target value -> stay and get overwriting, not target value -> move with the low pointer)
         //  overwrite the target value by the not target value giving by low pointer
 
         for (int low = 0; low < nums.length; low++) { // low pointer-> looping in order and give the notTarget value to the up pointer.
 
-            // if the lowe pointer is equal to given num, then the up pointer will stay, and the low pointer will move to the next to check the value
+            // if the lowe pointer is equal to given num, then the up pointer will stay, and the low pointer will move to the next to find the target value
             if(nums[low] != givenNum){ //if it is not target value, then go inside the if statement then give it to the up pointer.
 
             nums[up] = nums[low];  // give the current value to the up pointer->to become a new switched array
