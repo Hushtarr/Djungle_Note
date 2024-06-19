@@ -117,6 +117,15 @@ Hiding the data by giving private access modifier.
 “private variables, public getter, public setter”
 1. Make all class fields private to cut access and to be able to add conditions/filtering the usage.
 
-2. Create public setter method to write data (write only / mutator)(to be able to reach everywhere, it is always public), has parameter(s), not returns any value (void).
+2. Create public setter method to write data, has parameter(s), not returns any value (void).
 
-3. Create public getter method to read data (read only / immutable / accessor), has no parameters but has return type other than void.
+3. Create public getter method to read data , has no parameters but has return type other than void.
+## What is Inheritance?
+
+● Inheritance refers to the ability for one class to get all visible fields and methods of another class & interface.
+
+● With the use of inheritance, the information is made manageable in a  order.
+
+● Implements the DRY (Don’t Repeat Yourself) programming principle.
+
+● Builds IS-A relationships between classes (super / sub relation).
