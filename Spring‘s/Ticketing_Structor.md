@@ -44,3 +44,50 @@ view holding "object" as *attribute name*
 controller giving "new obj" as *attribute value* to the view
 
 attribute value --giveData--> attribute name
+
+
+# Entity.class
+
+### @Entity ->
+It tells JPA that this class should be mapped to a table in the database. Each instance of this entity class represents a row of data in the table.
+
+### @Id ->
+The primary key field used to mark the entity. Every entity must have a primary key.
+
+@GeneratedValue ->
+Is an annotation in JPA (Java Persistence API), used to specify the generation strategy of the primary key field of the entity class. It is usually used with @Id annotation. ***The main function of @GeneratedValue is to tell JPA how to automatically generate and manage the value of the primary key***, instead of having the developer manually set the primary key.
+```java
+@GeneratedValue(strategy = GenerationType.AUTO)
+@GeneratedValue(strategy = GenerationType.IDENTITY)
+@GeneratedValue(strategy = GenerationType.SEQUENCE)
+@GeneratedValue(strategy = GenerationType.TABLE)
+```
+
+### @Table ->
+Specify the database table corresponding to the entity class.
+Position: used on classes.
+Common properties:
+name: The name of the table.
+
+### @Column ->
+Specify the field of the entity class into DataBase.
+Position: used on fields of a class.
+Common properties:
+name: The name of the column.
+nullable: whether it can be NULL.
+unique: whether it is unique
+
+### @ManyToOne ->
+Definition: one entity can be associated with another entity multiple times, but the other entity is associated with it only once.
+
+	Example: Suppose a customer can have multiple orders, and each order can only belong to one customer. In this case, the customer entity class uses the @ManyToOne annotation to represent the many-to-one relationship with the order entity class.
+
+### @OneToOne ->
+Definition: one entity is associated with another entity once.
+
+	Example: If a user account is associated with a password, the relationship between the user account entity class and the password entity class can be expressed using the @OneToOne annotation.
+
+### @ManyToMany ->
+Definition: one entity can be associated with another entity multiple times, and another entity can also be associated with it multiple times.
+
+	Example: If a student can participate in multiple courses, and a course can also have multiple students, then the relationship between the student entity class and the course entity class can be expressed using the @ManyToMany annotation.
