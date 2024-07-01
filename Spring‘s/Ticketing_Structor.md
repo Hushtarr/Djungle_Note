@@ -1,14 +1,16 @@
 # Controller.class
 
-**@Controller** -> 
+### @Controller -> 
 *Responsible for handling user requests with the interaction between models and views.* 
 
-**@RequestMapping**("/Main") ->
+### @RequestMapping("/Main") ->
+*general endpoint*
+
 is used to send HTTP requests to specific methods in the controller class. It is used to define the URL path and the HTTP request method (GET, POST,PUT, DELETE, etc.)It can be applied to class-level and/or method-level. 
 
 The default HTTP method for @RequestMapping is GET. This means that if we don't specify a method attribute in the @RequestMapping annotation, it will assume that the method is GET,In this example.
 
-## Dependency injection
+### Dependency injection
 ```java
 private final AService aService;  
 private final BService bService;  
@@ -46,6 +48,29 @@ controller giving "new obj" as *attribute value* to the view
 attribute value --giveData--> attribute name
 
 
+# RestController.class
+
+### @RestController ->
+the different between @controller: it returns Data to the http method rather then view
+
+### ResponseEntity ->
+It usually used to return JSON formatted data to the client as an HTTP response body.
+By using ResponseEntity, you can define a standard response format, including status code, message and data. This approach makes API responses more consistent and easier to understand.
+Function summary:
+- Set HTTP status code
+- Set response headers
+- Return response body data
+- Support chain calls
+- Exception handling
+- Return empty response body
+- custom response
+
+### ResponseWrapper ->
+Custom output
+
+### @RequestBody ->
+capture data from api then give it to the local variable, it converts JSON or XML data in the request body to Java objects
+
 # Entity.class
 
 ### @Entity ->
@@ -77,17 +102,20 @@ name: The name of the column.
 nullable: whether it can be NULL.
 unique: whether it is unique
 
-### @ManyToOne ->
+###  Entity Relationship 
+`(tip: x To y :  x->main entity y->imported entity)`
+#### @ManyToOne ->
 Definition: one entity can be associated with another entity multiple times, but the other entity is associated with it only once.
 
 	Example: Suppose a customer can have multiple orders, and each order can only belong to one customer. In this case, the customer entity class uses the @ManyToOne annotation to represent the many-to-one relationship with the order entity class.
 
-### @OneToOne ->
+#### @OneToOne ->
 Definition: one entity is associated with another entity once.
 
 	Example: If a user account is associated with a password, the relationship between the user account entity class and the password entity class can be expressed using the @OneToOne annotation.
 
-### @ManyToMany ->
+#### @ManyToMany ->
 Definition: one entity can be associated with another entity multiple times, and another entity can also be associated with it multiple times.
+(when we use this relation ,we have to create 3rd table for combine them by both's ids, so they doesn't need to be 2 single table, but only the 3rd combined table)
 
 	Example: If a student can participate in multiple courses, and a course can also have multiple students, then the relationship between the student entity class and the course entity class can be expressed using the @ManyToMany annotation.
